@@ -1,0 +1,33 @@
+// slow build during dev is caused from:
+// https://github.com/nuxt/nuxt/issues/15412
+// we need to subscribe this issueس
+
+@use "vuetify/settings" with (
+  $body-font-family: "Cairo",
+
+  $table-background: "#fff",
+  $shadow-key-umbra-opacity: rgba(#523f69, 0.01),
+  $shadow-key-penumbra-opacity: rgba(#523f69, 0.01),
+  $shadow-key-ambient-opacity: rgba(#523f69, 0.075),
+  // CARD
+  $card-title-font-weight: 600,
+  $card-title-padding: 1rem 1.25rem,
+  $card-text-padding: 1.25rem 1rem,
+  $card-actions-padding: 0.5rem 1.25rem 1rem,
+  $card-text-letter-spacing: 0,
+
+  // BUTTONS
+  $button-text-letter-spacing: 0,
+  $button-card-actions-padding: 0 16px,
+
+  // DIALOG
+  $dialog-card-text-letter-spacing: 0,
+
+  // CHIP
+  $chip-font-weight: 500,
+
+  // Text Field
+  $text-field-details-padding-inline: 0,
+  // SnackBar
+  $snackbar-color: #9792e9
+);
